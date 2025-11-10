@@ -1,0 +1,1087 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text x='0' y='14' font-family='Poppins, sans-serif' font-weight='bold' font-size='16px' fill='%23a78bfa'>T</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toolify Hub - Smart Tools for the Next Web</title>
+    <meta name="description" content="A futuristic all-in-one toolkit with a collection of smart, free, and beautiful web tools, designed for the next web.">
+    <link rel="canonical" href="" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Toolify Hub - Smart Tools for the Next Web">
+    <meta property="og:description" content="A futuristic all-in-one toolkit with a collection of smart, free, and beautiful web tools, designed for the next web.">
+    <meta property="og:image" content="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3e%3cdefs%3e%3clinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3e%3cstop offset='0%25' style='stop-color:%236c2bdc;stop-opacity:1' /%3e%3cstop offset='100%25' style='stop-color:%232bb0c7;stop-opacity:1' /%3e%3c/linearGradient%3e%3c/defs%3e%3crect width='1200' height='630' fill='url(%23grad1)' /%3e%3ctext x='50%25' y='45%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins, sans-serif' font-size='120' font-weight='bold' fill='white'%3eToolify Hub%3c/text%3e%3ctext x='50%25' y='60%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter, sans-serif' font-size='40' fill='rgba(255,255,255,0.8)'%3eSmart, free, and beautiful web tools%3c/text%3e%3c/svg%3e">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Toolify Hub - Smart Tools for the Next Web">
+    <meta property="twitter:description" content="A futuristic all-in-one toolkit with a collection of smart, free, and beautiful web tools, designed for the next web.">
+    <meta property="twitter:image" content="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3e%3cdefs%3e%3clinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3e%3cstop offset='0%25' style='stop-color:%236c2bdc;stop-opacity:1' /%3e%3cstop offset='100%25' style='stop-color:%232bb0c7;stop-opacity:1' /%3e%3c/linearGradient%3e%3c/defs%3e%3crect width='1200' height='630' fill='url(%23grad1)' /%3e%3ctext x='50%25' y='45%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins, sans-serif' font-size='120' font-weight='bold' fill='white'%3eToolify Hub%3c/text%3e%3ctext x='50%25' y='60%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter, sans-serif' font-size='40' fill='rgba(255,255,255,0.8)'%3eSmart, free, and beautiful web tools%3c/text%3e%3c/svg%3e">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0a0a1a;
+        color: #e0e0ff;
+        overflow-x: hidden;
+      }
+      .font-poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+      .gradient-bg {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        background: linear-gradient(300deg, #6c2bdc, #3f87a6, #2bb0c7);
+        background-size: 200% 200%;
+        animation: gradient-animation 15s ease infinite;
+      }
+
+      @keyframes gradient-animation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      
+      .blob {
+        position: fixed;
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: 0.3;
+        z-index: -1;
+      }
+      .blob1 {
+        width: 400px;
+        height: 400px;
+        background: #8e2de2;
+        top: -100px;
+        left: -100px;
+        animation: blob1-move 20s infinite alternate;
+      }
+      .blob2 {
+        width: 300px;
+        height: 300px;
+        background: #4a00e0;
+        bottom: -50px;
+        right: -50px;
+        animation: blob2-move 22s infinite alternate;
+      }
+      
+      @keyframes blob1-move {
+        from { transform: translate(0, 0) scale(1); }
+        to { transform: translate(100px, 100px) scale(1.2); }
+      }
+       @keyframes blob2-move {
+        from { transform: translate(0, 0) scale(1); }
+        to { transform: translate(-150px, -100px) scale(0.8); }
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom scrollbar for a futuristic look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(10, 10, 26, 0.8);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(142, 45, 226, 0.6);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(142, 45, 226, 0.8);
+      }
+
+      .prose {
+        color: #d1d5db;
+      }
+      .prose h1, .prose h2, .prose h3 {
+        color: #ffffff;
+      }
+      .prose a {
+        color: #a78bfa;
+      }
+      .prose strong {
+        color: #f3f4f6;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client"
+  }
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import React, { useState, useEffect, useRef, useCallback } from 'react';
+      import ReactDOM from 'react-dom/client';
+
+      // --- components/icons.js ---
+      const IconWrapper = ({ children, className = "" }) => (
+        React.createElement('svg', {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "24",
+          height: "24",
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          className: `w-full h-full ${className}`
+        }, children)
+      );
+      const MetaTagIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('polyline', { points: "4 7 4 4 20 4 20 7" }), React.createElement('line', { x1: "9", y1: "20", x2: "15", y2: "20" }), React.createElement('line', { x1: "12", y1: "4", x2: "12", y2: "20" })));
+      const JsonCsvIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('path', { d: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" }), React.createElement('polyline', { points: "14 2 14 8 20 8" }), React.createElement('line', { x1: "16", y1: "13", x2: "8", y2: "13" }), React.createElement('line', { x1: "16", y1: "17", x2: "8", y2: "17" }), React.createElement('polyline', { points: "10 9 9 9 8 9" })));
+      const GradientIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('circle', { cx: "12", cy: "12", r: "10" }), React.createElement('path', { d: "M12 2a10 10 0 0 0-10 10" })));
+      const WordCountIcon = () => React.createElement(IconWrapper, null, React.createElement('path', { d: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" }));
+      const CaseConverterIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('polyline', { points: "9 13 12 10 15 13" }), React.createElement('line', { x1: "12", y1: "10", x2: "12", y2: "17" }), React.createElement('path', { d: "M21 12.7V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4.2" })));
+      const TimestampIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('circle', { cx: "12", cy: "12", r: "10" }), React.createElement('polyline', { points: "12 6 12 12 16 14" })));
+      const PasswordIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('rect', { x: "3", y: "11", width: "18", height: "11", rx: "2", ry: "2" }), React.createElement('path', { d: "M7 11V7a5 5 0 0 1 10 0v4" })));
+      const SlugIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('line', { x1: "4", y1: "9", x2: "20", y2: "9" }), React.createElement('line', { x1: "4", y1: "15", x2: "20", y2: "15" }), React.createElement('line', { x1: "10", y1: "3", x2: "8", y2: "21" }), React.createElement('line', { x1: "16", y1: "3", x2: "14", y2: "21" })));
+      const Base64Icon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('path', { d: "M21 10c0 7-5.33 12-12 12a12.018 12.018 0 0 1-5-1.12V21a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1.12c0-3.92 2.61-7.22 6-8.38z" }), React.createElement('path', { d: "M12 2c5.52 0 10 4.48 10 10" }), React.createElement('path', { d: "M2 12c0-5.52 4.48-10 10-10" })));
+      const PxRemIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('path', { d: "M17 3l4 4-4 4" }), React.createElement('path', { d: "M21 7H7" }), React.createElement('path', { d: "M7 21l-4-4 4-4" }), React.createElement('path', { d: "M3 17h14" })));
+      const UrlIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('path', { d: "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72" }), React.createElement('path', { d: "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72" })));
+      const PaletteIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('circle', { cx: "12", cy: "5", r: "3" }), React.createElement('circle', { cx: "6.5", cy: "11.5", r: "3" }), React.createElement('circle', { cx: "17.5", cy: "11.5", r: "3" }), React.createElement('circle', { cx: "12", cy: "18", r: "3" })));
+      const MenuIcon = () => React.createElement(IconWrapper, null, React.createElement('path', { d: "M4 6h16M4 12h16M4 18h16" }));
+      const XIcon = () => React.createElement(IconWrapper, null, React.createElement('path', { d: "M18 6L6 18M6 6l12 12" }));
+      const SearchIcon = () => React.createElement(IconWrapper, null, React.createElement(React.Fragment, null, React.createElement('circle', { cx: "11", cy: "11", r: "8" }), React.createElement('path', { d: "m21 21-4.3-4.3" })));
+
+      // --- data/content.js ---
+      const tools = [
+        { id: 'meta', title: 'Meta Tag Analyzer', description: 'Extract meta tags from a URL.', icon: React.createElement(MetaTagIcon), component: 'MetaTagAnalyzer', content: '<h3>What are Meta Tags?</h3><p>Meta tags are snippets of text that describe a page\'s content; they don\'t appear on the page itself, but only in the page\'s code. Meta tags are essential for SEO as they help search engines understand what your content is about, which can influence how your pages are ranked and displayed in search results.</p><h3>How To Use</h3><p>Simply enter the full URL of the website you wish to analyze and click the "Analyze" button. Our tool will attempt to fetch the site and display its title tag, meta description, keywords, and other relevant meta information. Please note that this tool works best on servers that do not block requests (CORS policy).</p>' },
+        { id: 'json-csv', title: 'JSON → CSV Converter', description: 'Convert JSON data to CSV format.', icon: React.createElement(JsonCsvIcon), component: 'JsonToCsv', content: '<h3>Effortless Data Conversion</h3><p>Manually converting structured JSON data into a CSV file can be tedious and prone to errors. This tool automates the process, instantly transforming a JSON array of objects into a clean, comma-separated values (CSV) format that\'s ready for spreadsheets and data analysis tools.</p><h3>Getting Started</h3><p>Paste your JSON array into the top text area. The JSON must be an array of objects, where each object has the same set of keys. Click "Convert", and the tool will generate the CSV output below, which you can then copy to your clipboard or download as a .csv file.</p>' },
+        { id: 'gradient', title: 'CSS Gradient Generator', description: 'Create beautiful CSS gradients.', icon: React.createElement(GradientIcon), component: 'CssGradientGenerator', content: '<h3>Create Stunning Gradients</h3><p>CSS gradients allow you to create smooth transitions between two or more specified colors. They are a fantastic way to add depth and modern aesthetics to your web designs without needing to use image files. This tool provides a simple, visual way to generate the necessary CSS code.</p><h3>How It Works</h3><p>Use the color pickers to select your start and end colors. Adjust the slider to change the angle of the gradient. The preview will update in real-time. Once you\'re happy with the result, simply copy the generated CSS code and paste it into your stylesheet.</p>' },
+        { id: 'word-counter', title: 'Word Counter', description: 'Count words and characters in text.', icon: React.createElement(WordCountIcon), component: 'WordCounter', content: '<h3>Instant Text Analysis</h3><p>Whether you\'re a writer working towards a word count goal, a student ensuring an essay meets length requirements, or a marketer crafting the perfect tweet, knowing your character and word count is crucial. This tool provides an instant and accurate count as you type.</p><h3>Simple and Fast</h3><p>Just start typing or paste your text into the text area. The word and character counts will update in real-time, giving you immediate feedback on your content\'s length. There\'s no need to click any buttons—it just works.</p>' },
+        { id: 'case-converter', title: 'Case Converter', description: 'Change text to various cases.', icon: React.createElement(CaseConverterIcon), component: 'CaseConverter', content: '<h3>Format Text Instantly</h3><p>Quickly and easily convert blocks of text between different letter cases: UPPER CASE, lower case, and Title Case. This is perfect for editors, writers, and programmers who need to ensure their text conforms to a specific style guide or formatting requirement.</p><h3>One-Click Conversion</h3><p>Paste your text into the text area, then click the button for the case you want to convert to. The text will be transformed instantly. Use the "Clear" button to start over with a fresh slate.</p>' },
+        { id: 'timestamp', title: 'Timestamp Converter', description: 'Convert between Unix and readable dates.', icon: React.createElement(TimestampIcon), component: 'TimestampConverter', content: '<h3>Bridge the Gap Between Machines and Humans</h3><p>A Unix timestamp is the number of seconds that have elapsed since January 1, 1970. It\'s a universal standard used in computing but isn\'t human-readable. This tool seamlessly converts between Unix timestamps and a standard date and time format that everyone can understand.</p><h3>How To Use</h3><p>You can either enter a Unix timestamp to see the corresponding date, or use the date/time picker to find its timestamp. The other field will update automatically, making it easy to convert in either direction.</p>' },
+        { id: 'password', title: 'Password Generator', description: 'Create strong, random passwords.', icon: React.createElement(PasswordIcon), component: 'PasswordGenerator', content: '<h3>Enhance Your Security</h3><p>Using strong, unique passwords for each of your online accounts is one of the most effective ways to protect your digital identity. A strong password is long, random, and includes a mix of uppercase letters, lowercase letters, numbers, and symbols. This tool helps you create such passwords with ease.</p><h3>Customizable and Secure</h3><p>Adjust the slider to set your desired password length. Use the checkboxes to select which character types to include. A new password will be generated automatically. Click the copy icon to copy it to your clipboard for use.</p>' },
+        { id: 'slug', title: 'Text to Slug', description: 'Generate SEO-friendly URL slugs.', icon: React.createElement(SlugIcon), component: 'TextToSlug', content: '<h3>What is a Slug?</h3><p>A "slug" is the part of a URL that identifies a specific page on a website in a human-readable form. For example, in `toolifyhub.com/tools/text-to-slug`, the slug is `text-to-slug`. Good slugs are crucial for Search Engine Optimization (SEO) as they help search engines and users understand the content of a page.</p><h3>How It Works</h3><p>Enter your page title or any text into the input field. The tool will instantly convert it into a clean, URL-friendly slug by making it lowercase, removing special characters, and replacing spaces with hyphens.</p>' },
+        { id: 'base64', title: 'Image to Base64', description: 'Encode images to Base64 strings.', icon: React.createElement(Base64Icon), component: 'ImageToBase64', content: '<h3>Embedding Images Directly</h3><p>Base64 is a method of encoding binary data, like images, into a text string. This allows you to embed images directly into your HTML or CSS files, which can reduce the number of HTTP requests a browser needs to make and can sometimes improve load times for small images.</p><h3>How To Use</h3><p>Click the "Choose File" button and select an image from your device. The tool will immediately convert the image into a Base64 data URI string. You can then copy the entire string and use it in an `<img>` tag\'s `src` attribute or a CSS `url()` function.</p>' },
+        { id: 'px-rem', title: 'PX ↔ REM Converter', description: 'Convert pixel values to REM units.', icon: React.createElement(PxRemIcon), component: 'PxToRem', content: '<h3>Modern & Accessible Web Typography</h3><p>Using `rem` units for font sizes is a modern web development practice that improves accessibility. A `rem` is relative to the root font-size of the document (usually 16px). This allows users to scale the text on a page by changing their browser\'s font size setting, which is not possible if sizes are set in pixels (`px`).</p><h3>Flexible Conversion</h3><p>Set the base font size (typically 16px). Then, enter a value in either the PX or REM field to see its equivalent in the other. The conversion happens instantly in both directions.</p>' },
+        { id: 'url-coder', title: 'URL Encoder/Decoder', description: 'Encode or decode URL components.', icon: React.createElement(UrlIcon), component: 'UrlEncoderDecoder', content: '<h3>Safe URLs for the Web</h3><p>URLs can only contain a specific set of characters. URL encoding converts reserved characters (like spaces, `?`, `&`) into a format that is safe to transmit over the internet, consisting of a `%` followed by two hexadecimal digits. Decoding reverses this process.</p><h3>How It Works</h3><p>Enter a string of text or a full URL into the text area. Click "Encode" to convert it into a URL-safe format. If you have an encoded string, paste it in and click "Decode" to revert it to its original human-readable form.</p>' },
+        { id: 'palette', title: 'Color Picker & Palette', description: 'Pick colors and create palettes.', icon: React.createElement(PaletteIcon), component: 'ColorPalette', content: '<h3>Design Your Perfect Color Scheme</h3><p>A consistent and harmonious color palette is key to great design. This tool allows you to visually pick colors and save them into a palette. It\'s perfect for web designers and developers who need to quickly create and reference a color scheme for a project.</p><h3>Building Your Palette</h3><p>Use the color picker or enter a hex code to select a color. Click "Add to Palette" to save it. You can save up to 12 colors. To copy a color\'s hex code, simply click on its swatch in the palette below. Use "Clear Palette" to start over.</p>' },
+      ];
+
+      const pages = [
+        { id: 'about', title: 'About Toolify Hub', description: 'Learn about the mission and team behind Toolify Hub, a free collection of smart web tools for creators.', content: '<h2>Our Mission</h2><p>Toolify Hub was born from a simple idea: the tools developers and creators use every day should be powerful, beautiful, and completely free. We saw a need for a centralized place where anyone could access a high-quality suite of web utilities without intrusive ads, tracking, or paywalls. Our mission is to build that place.</p><p>We are dedicated to crafting tools that are not only functional but also a joy to use. We believe in the power of good design to make complex tasks simple. Every tool on this platform is built with a focus on clean aesthetics, intuitive user experience, and top-tier performance.</p><h2>Who We Are</h2><p>We are a small team of passionate developers and designers who love building for the web. We use these tools ourselves, and we are committed to continuously improving them and adding new ones based on community feedback. Toolify Hub is a project of passion, built for creators, by creators.</p>' },
+        { id: 'contact', title: 'Contact Us', description: 'Get in touch with the Toolify Hub team with your questions, feedback, or suggestions.', content: '<h2>Get in Touch</h2><p>We love hearing from our users! Whether you have a question, a suggestion for a new tool, or a bug report, please feel free to reach out. Your feedback is invaluable in helping us make Toolify Hub better for everyone.</p><p>You can reach us via email at:</p><p><a href="mailto:hello@toolifyhub.dev" class="text-purple-400">hello@toolifyhub.dev</a></p><p>We do our best to respond to all inquiries within 48 hours.</p>' },
+        { id: 'privacy', title: 'Privacy Policy', description: 'Read the Toolify Hub privacy policy. We do not collect, store, or share any of your personal data.', content: '<h2>Our Commitment to Privacy</h2><p><strong>Last updated: October 26, 2023</strong></p><p>Toolify Hub is fundamentally committed to user privacy. Our policy is simple: we do not collect, store, or share any of your personal data. Ever.</p><h3>No Tracking or Analytics</h3><p>This website does not use cookies, tracking pixels, or any third-party analytics services (like Google Analytics). We do not record your IP address or any other identifying information. Your activity on this site is your own business.</p><h3>Client-Side Functionality</h3><p>All tools on Toolify Hub operate entirely within your browser (client-side). Any data you input into a tool (like text for the word counter or an image for the Base64 converter) is processed on your own device and is never sent to our servers. Once you close the browser tab, it\'s gone forever.</p><h3>No Accounts, No Databases</h3><p>We do not have user accounts or a database to store user information. There is nothing for you to sign up for, and therefore, nothing for us to collect.</p><p>In short, we have no interest in your data. We just want to provide great tools. If you have any questions about our commitment to privacy, please don\'t hesitate to contact us.</p>' },
+        { id: 'sitemap', title: 'Sitemap', description: 'A complete list of all tools, pages, and articles on Toolify Hub, making it easy for search engines and users to navigate the site.', content: '' },
+      ];
+
+      const blogPosts = [
+        {
+          slug: 'why-rem-units-matter-for-accessibility',
+          title: 'Why REM Units Matter for Modern Web Design',
+          description: 'Learn why using REM units instead of pixels is crucial for creating accessible and user-friendly websites.',
+          date: 'October 24, 2023',
+          content: '<h2>The Problem with Pixels</h2><p>For years, pixels (px) were the standard unit for sizing text on the web. They are absolute, precise, and easy to understand. However, they have one major drawback: they don\'t respect the user\'s browser settings. If a user with a visual impairment sets their default browser font size to be larger for better readability, text sized in pixels will ignore this preference, remaining fixed and potentially unreadable.</p><h2>Enter the REM Unit</h2><p>The `rem` unit solves this problem elegantly. REM stands for "Root EM," and it is a relative unit. 1 rem is equal to the font size of the root `<html>` element. By default, this is 16px in most browsers, but the user can change it.</p><p>When you size your fonts, padding, and margins in `rem`, your entire layout scales proportionally when the user adjusts their base font size. This creates a more accessible, flexible, and user-friendly experience. Our PX <> REM Converter tool is designed to make adopting this modern best practice as easy as possible.</p>'
+        },
+        {
+          slug: 'demystifying-base64-encoding',
+          title: 'Demystifying Base64: When to Embed Images in Your Code',
+          description: 'Discover what Base64 encoding is, how it works with data URIs, and when you should (and should not) embed images directly into your HTML and CSS.',
+          date: 'October 22, 2023',
+          content: '<h2>What is Base64?</h2><p>Base64 is not an encryption method; it\'s an encoding scheme. It takes binary data (like the data that makes up an image or a file) and converts it into a string of plain text characters. This text string can then be safely included in text-based formats like HTML, CSS, or JSON.</p><h2>The Use Case: Data URIs</h2><p>The most common use for Base64 on the web is in Data URIs. By converting an image to a Base64 string, you can embed it directly in your HTML `<img>` tag\'s `src` attribute or in a CSS `background-image` property. The primary benefit is that the browser doesn\'t need to make a separate network request to fetch the image, as it\'s already part of the document.</p><h2>Should You Use It?</h2><p>This technique is best suited for very small images, like icons or logos. For larger images, Base64 encoding actually increases the file size by about 33% and can make your initial HTML or CSS file much slower to download. For most photos and complex graphics, sticking with a traditional linked image file is still the best approach.</p>'
+        }
+      ];
+
+      // --- components/tools/MetaTagAnalyzer.js ---
+      const MetaTagAnalyzer = () => {
+        const [url, setUrl] = React.useState('');
+        const handleAnalyze = () => {
+          alert("Due to browser security (CORS policy), fetching and analyzing external websites directly from the browser is not possible. This tool is a demonstration of the UI. A backend service or browser extension would be required for this to function.");
+        };
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('input', { type: "url", value: url, onChange: (e) => setUrl(e.target.value), placeholder: "https://example.com", className: "w-full bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500" }),
+          React.createElement('button', { onClick: handleAnalyze, className: "w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300" }, "Analyze"),
+          React.createElement('div', { className: "text-xs text-slate-500 text-center mt-2" }, "Note: This is a UI demonstration. Direct URL fetching is restricted by browser CORS policy.")
+        );
+      };
+      
+      // --- components/tools/JsonToCsv.js ---
+      const JsonToCsv = () => {
+        const [jsonInput, setJsonInput] = useState('');
+        const [csvOutput, setCsvOutput] = useState('');
+        const [error, setError] = useState('');
+        const handleConvert = () => {
+          try {
+            setError('');
+            const data = JSON.parse(jsonInput);
+            if (!Array.isArray(data) || data.length === 0) {
+              setError('Input must be a non-empty array of objects.');
+              return;
+            }
+            const headers = Object.keys(data[0]);
+            const csvRows = [
+              headers.join(','),
+              ...data.map(row => headers.map(header => JSON.stringify(row[header], (_, value) => value === null ? '' : value)).join(','))
+            ];
+            setCsvOutput(csvRows.join('\n'));
+          } catch (e) {
+            setError('Invalid JSON format.');
+            setCsvOutput('');
+          }
+        };
+        const handleCopy = () => { navigator.clipboard.writeText(csvOutput); };
+        const handleDownload = () => {
+          const blob = new Blob([csvOutput], { type: 'text/csv;charset=utf-8;' });
+          const link = document.createElement('a');
+          if (link.download !== undefined) {
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'data.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }
+        };
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('textarea', { value: jsonInput, onChange: (e) => setJsonInput(e.target.value), placeholder: '[{"id":1,"name":"test"}]', className: "w-full h-24 bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none" }),
+          React.createElement('button', { onClick: handleConvert, className: "w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300" }, "Convert"),
+          error && React.createElement('p', { className: "text-red-400 text-sm" }, error),
+          csvOutput && React.createElement(React.Fragment, null,
+            React.createElement('textarea', { readOnly: true, value: csvOutput, className: "w-full h-24 bg-slate-800/70 border border-slate-100/10 rounded-md px-3 py-2 text-white resize-none" }),
+            React.createElement('div', { className: "flex space-x-2" },
+              React.createElement('button', { onClick: handleCopy, className: "flex-1 bg-slate-600 hover:bg-slate-700 text-white text-sm py-1 px-2 rounded-md transition-colors duration-300" }, "Copy"),
+              React.createElement('button', { onClick: handleDownload, className: "flex-1 bg-slate-600 hover:bg-slate-700 text-white text-sm py-1 px-2 rounded-md transition-colors duration-300" }, "Download")
+            )
+          )
+        );
+      };
+      
+      // --- components/tools/CssGradientGenerator.js ---
+      const CssGradientGenerator = () => {
+        const [color1, setColor1] = useState('#8e2de2');
+        const [color2, setColor2] = useState('#4a00e0');
+        const [angle, setAngle] = useState(90);
+        const [copied, setCopied] = useState(false);
+        const gradient = `linear-gradient(${angle}deg, ${color1}, ${color2})`;
+        const handleCopy = () => {
+          navigator.clipboard.writeText(`background: ${gradient};`);
+          setCopied(true);
+          setTimeout(() => setCopied(false), 2000);
+        };
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('div', { className: "w-full h-24 rounded-md", style: { background: gradient } }),
+          React.createElement('div', { className: "flex items-center justify-between space-x-4" },
+            React.createElement('input', { type: "color", value: color1, onChange: (e) => setColor1(e.target.value), className: "w-12 h-12 bg-transparent border-none cursor-pointer" }),
+            React.createElement('input', { type: "color", value: color2, onChange: (e) => setColor2(e.target.value), className: "w-12 h-12 bg-transparent border-none cursor-pointer" })
+          ),
+          React.createElement('div', { className: "flex flex-col space-y-2" },
+            React.createElement('label', { htmlFor: "angle", className: "text-sm text-slate-400" }, `Angle: ${angle}°`),
+            React.createElement('input', { id: "angle", type: "range", min: "0", max: "360", value: angle, onChange: (e) => setAngle(parseInt(e.target.value, 10)), className: "w-full" })
+          ),
+          React.createElement('div', { className: "bg-slate-900/70 p-2 rounded-md text-sm break-all" }, React.createElement('code', null, `background: ${gradient};`)),
+          React.createElement('button', { onClick: handleCopy, className: "w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300" }, copied ? 'Copied!' : 'Copy CSS')
+        );
+      };
+
+      // --- components/tools/WordCounter.js ---
+      const WordCounter = () => {
+        const [text, setText] = useState('');
+        const wordCount = text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
+        const charCount = text.length;
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('textarea', { value: text, onChange: (e) => setText(e.target.value), placeholder: "Start typing here...", className: "w-full flex-grow bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none" }),
+          React.createElement('div', { className: "flex justify-around text-center p-2 bg-slate-800/50 rounded-md" },
+            React.createElement('div', null, React.createElement('span', { className: "font-bold text-xl text-purple-400" }, wordCount), React.createElement('p', { className: "text-xs text-slate-400" }, "Words")),
+            React.createElement('div', null, React.createElement('span', { className: "font-bold text-xl text-purple-400" }, charCount), React.createElement('p', { className: "text-xs text-slate-400" }, "Characters"))
+          )
+        );
+      };
+
+      // --- components/tools/CaseConverter.js ---
+      const CaseConverter = () => {
+        const [text, setText] = useState('');
+        const toTitleCase = (str) => str.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('textarea', { value: text, onChange: (e) => setText(e.target.value), placeholder: "Enter text to convert", className: "w-full flex-grow bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none" }),
+          React.createElement('div', { className: "grid grid-cols-3 gap-2" },
+            React.createElement('button', { onClick: () => setText(text.toUpperCase()), className: "bg-slate-600 hover:bg-slate-700 text-white text-sm py-2 px-2 rounded-md transition-colors duration-300" }, "UPPER"),
+            React.createElement('button', { onClick: () => setText(text.toLowerCase()), className: "bg-slate-600 hover:bg-slate-700 text-white text-sm py-2 px-2 rounded-md transition-colors duration-300" }, "lower"),
+            React.createElement('button', { onClick: () => setText(toTitleCase(text)), className: "bg-slate-600 hover:bg-slate-700 text-white text-sm py-2 px-2 rounded-md transition-colors duration-300" }, "Title")
+          ),
+          React.createElement('button', { onClick: () => setText(''), className: "w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300" }, "Clear")
+        );
+      };
+
+      // --- components/tools/TimestampConverter.js ---
+      const TimestampConverter = () => {
+        const [timestamp, setTimestamp] = useState(Math.floor(Date.now() / 1000).toString());
+        const [dateTime, setDateTime] = useState(new Date().toISOString().slice(0, 16));
+        const handleTimestampChange = (e) => {
+          const ts = e.target.value;
+          setTimestamp(ts);
+          if (!isNaN(Number(ts)) && ts.length > 0) {
+            try {
+              const date = new Date(Number(ts) * 1000);
+              if (!isNaN(date.getTime())) {
+                setDateTime(date.toISOString().slice(0, 16));
+              }
+            } catch (error) { /* handle invalid date */ }
+          }
+        };
+        const handleDateTimeChange = (e) => {
+          const dt = e.target.value;
+          setDateTime(dt);
+          if (dt) {
+            const date = new Date(dt);
+            setTimestamp(Math.floor(date.getTime() / 1000).toString());
+          }
+        };
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('div', null,
+            React.createElement('label', { className: "text-sm text-slate-400 block mb-1" }, "Unix Timestamp"),
+            React.createElement('input', { type: "number", value: timestamp, onChange: handleTimestampChange, className: "w-full bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500" })
+          ),
+          React.createElement('div', null,
+            React.createElement('label', { className: "text-sm text-slate-400 block mb-1" }, "Date & Time"),
+            React.createElement('input', { type: "datetime-local", value: dateTime, onChange: handleDateTimeChange, className: "w-full bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500" })
+          )
+        );
+      };
+
+      // --- components/tools/PasswordGenerator.js ---
+      const PasswordGenerator = () => {
+        const [password, setPassword] = useState('');
+        const [length, setLength] = useState(16);
+        const [includeUpper, setIncludeUpper] = useState(true);
+        const [includeLower, setIncludeLower] = useState(true);
+        const [includeNumbers, setIncludeNumbers] = useState(true);
+        const [includeSymbols, setIncludeSymbols] = useState(true);
+        const [copied, setCopied] = useState(false);
+        const generatePassword = useCallback(() => {
+          const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+          const lower = 'abcdefghijklmnopqrstuvwxyz';
+          const numbers = '0123456789';
+          const symbols = '!@#$%^&*()_+~`|}{[]:;?><,./-=';
+          let charset = '';
+          if (includeUpper) charset += upper;
+          if (includeLower) charset += lower;
+          if (includeNumbers) charset += numbers;
+          if (includeSymbols) charset += symbols;
+          if (charset === '') {
+            setPassword('Select at least one option');
+            return;
+          }
+          let newPassword = '';
+          for (let i = 0; i < length; i++) {
+            newPassword += charset.charAt(Math.floor(Math.random() * charset.length));
+          }
+          setPassword(newPassword);
+          setCopied(false);
+        }, [length, includeUpper, includeLower, includeNumbers, includeSymbols]);
+        useEffect(() => { generatePassword(); }, [generatePassword]);
+        const handleCopy = () => {
+          if (password) {
+            navigator.clipboard.writeText(password);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+          }
+        };
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('div', { className: "relative" },
+            React.createElement('input', { readOnly: true, value: password, className: "w-full bg-slate-900/70 border border-slate-100/10 rounded-md pl-3 pr-10 py-2 text-white placeholder-slate-400" }),
+            React.createElement('button', { onClick: handleCopy, className: "absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white" }, React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, React.createElement('rect', { x: "9", y: "9", width: "13", height: "13", rx: "2", ry: "2" }), React.createElement('path', { d: "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" })))
+          ),
+          copied && React.createElement('p', { className: "text-green-400 text-xs text-center -my-2" }, "Copied to clipboard!"),
+          React.createElement('div', { className: "space-y-3" },
+            React.createElement('div', { className: "flex items-center justify-between text-sm" },
+              React.createElement('label', { htmlFor: "length" }, `Length: ${length}`),
+              React.createElement('input', { id: "length", type: "range", min: "6", max: "32", value: length, onChange: (e) => setLength(parseInt(e.target.value, 10)) })
+            ),
+            React.createElement('div', { className: "grid grid-cols-2 gap-2 text-sm" },
+              React.createElement('label', { className: "flex items-center space-x-2" }, React.createElement('input', { type: "checkbox", checked: includeUpper, onChange: (e) => setIncludeUpper(e.target.checked) }), React.createElement('span', null, "Uppercase")),
+              React.createElement('label', { className: "flex items-center space-x-2" }, React.createElement('input', { type: "checkbox", checked: includeLower, onChange: (e) => setIncludeLower(e.target.checked) }), React.createElement('span', null, "Lowercase")),
+              React.createElement('label', { className: "flex items-center space-x-2" }, React.createElement('input', { type: "checkbox", checked: includeNumbers, onChange: (e) => setIncludeNumbers(e.target.checked) }), React.createElement('span', null, "Numbers")),
+              React.createElement('label', { className: "flex items-center space-x-2" }, React.createElement('input', { type: "checkbox", checked: includeSymbols, onChange: (e) => setIncludeSymbols(e.target.checked) }), React.createElement('span', null, "Symbols"))
+            )
+          ),
+          React.createElement('button', { onClick: generatePassword, className: "w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300" }, "Generate")
+        );
+      };
+
+      // --- components/tools/TextToSlug.js ---
+      const TextToSlug = () => {
+        const [text, setText] = useState('');
+        const [slug, setSlug] = useState('');
+        const [copied, setCopied] = useState(false);
+        const generateSlug = (value) => {
+          const newSlug = value.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
+          setSlug(newSlug);
+        };
+        const handleTextChange = (e) => {
+          setText(e.target.value);
+          generateSlug(e.target.value);
+        };
+        const handleCopy = () => {
+          if (slug) {
+            navigator.clipboard.writeText(slug);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+          }
+        };
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('input', { type: "text", value: text, onChange: handleTextChange, placeholder: "Enter text here...", className: "w-full bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500" }),
+          React.createElement('div', { className: "relative" },
+            React.createElement('input', { readOnly: true, value: slug, className: "w-full bg-slate-800/70 border border-slate-100/10 rounded-md pl-3 pr-10 py-2 text-white" }),
+            React.createElement('button', { onClick: handleCopy, className: "absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white" }, React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, React.createElement('rect', { x: "9", y: "9", width: "13", height: "13", rx: "2", ry: "2" }), React.createElement('path', { d: "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" })))
+          ),
+          copied && React.createElement('p', { className: "text-green-400 text-xs text-center -my-2" }, "Slug copied!")
+        );
+      };
+
+      // --- components/tools/ImageToBase64.js ---
+      const ImageToBase64 = () => {
+        const [base64, setBase64] = useState('');
+        const [copied, setCopied] = useState(false);
+        const handleFileChange = (e) => {
+          const file = e.target.files?.[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = () => { setBase64(reader.result); };
+            reader.readAsDataURL(file);
+          }
+        };
+        const handleCopy = () => {
+          if (base64) {
+            navigator.clipboard.writeText(base64);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+          }
+        };
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('input', { type: "file", accept: "image/*", onChange: handleFileChange, className: "w-full text-sm text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-purple-600/50 file:text-purple-200 hover:file:bg-purple-600/70 cursor-pointer" }),
+          base64 && React.createElement(React.Fragment, null,
+            React.createElement('textarea', { readOnly: true, value: base64, className: "w-full h-32 bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white resize-none" }),
+            React.createElement('button', { onClick: handleCopy, className: "w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300" }, copied ? 'Copied!' : 'Copy Base64')
+          )
+        );
+      };
+
+      // --- components/tools/PxToRem.js ---
+      const PxToRem = () => {
+        const [px, setPx] = useState('16');
+        const [rem, setRem] = useState('1');
+        const [base, setBase] = useState('16');
+        const handlePxChange = (e) => {
+          const pxVal = e.target.value;
+          setPx(pxVal);
+          if (Number(pxVal) && Number(base)) {
+            setRem((Number(pxVal) / Number(base)).toString());
+          } else { setRem(''); }
+        };
+        const handleRemChange = (e) => {
+          const remVal = e.target.value;
+          setRem(remVal);
+          if (Number(remVal) && Number(base)) {
+            setPx((Number(remVal) * Number(base)).toString());
+          } else { setPx(''); }
+        };
+        const handleBaseChange = (e) => {
+          const baseVal = e.target.value;
+          setBase(baseVal);
+          if (Number(px) && Number(baseVal)) {
+            setRem((Number(px) / Number(baseVal)).toString());
+          } else { setRem(''); }
+        };
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('div', { className: "flex items-center space-x-2" },
+            React.createElement('label', { className: "text-sm text-slate-400" }, "Base:"),
+            React.createElement('input', { type: "number", value: base, onChange: handleBaseChange, className: "w-20 bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500" }),
+            React.createElement('span', { className: "text-sm text-slate-400" }, "px")
+          ),
+          React.createElement('div', { className: "flex items-center space-x-2" },
+            React.createElement('input', { type: "number", value: px, onChange: handlePxChange, className: "w-full bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500" }),
+            React.createElement('span', { className: "text-slate-400" }, "PX")
+          ),
+          React.createElement('div', { className: "flex items-center space-x-2" },
+            React.createElement('input', { type: "number", value: rem, onChange: handleRemChange, className: "w-full bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500" }),
+            React.createElement('span', { className: "text-slate-400" }, "REM")
+          )
+        );
+      };
+
+      // --- components/tools/UrlEncoderDecoder.js ---
+      const UrlEncoderDecoder = () => {
+        const [text, setText] = useState('');
+        const [result, setResult] = useState('');
+        const handleEncode = () => { setResult(encodeURIComponent(text)); };
+        const handleDecode = () => {
+          try {
+            setResult(decodeURIComponent(text));
+          } catch (e) { setResult('Invalid string to decode'); }
+        };
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('textarea', { value: text, onChange: (e) => setText(e.target.value), placeholder: "Enter URL component to process", className: "w-full h-24 bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none" }),
+          React.createElement('div', { className: "flex space-x-2" },
+            React.createElement('button', { onClick: handleEncode, className: "flex-1 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300" }, "Encode"),
+            React.createElement('button', { onClick: handleDecode, className: "flex-1 bg-slate-600 hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300" }, "Decode")
+          ),
+          result && React.createElement('textarea', { readOnly: true, value: result, className: "w-full h-24 bg-slate-800/70 border border-slate-100/10 rounded-md px-3 py-2 text-white resize-none" })
+        );
+      };
+
+      // --- components/tools/ColorPalette.js ---
+      const ColorPalette = () => {
+        const [color, setColor] = useState('#8a2be2');
+        const [palette, setPalette] = useState([]);
+        const [copiedColor, setCopiedColor] = useState(null);
+        const addToPalette = () => {
+          if (palette.length < 12 && !palette.includes(color)) {
+            setPalette([...palette, color]);
+          }
+        };
+        const handleCopy = (colorToCopy) => {
+          navigator.clipboard.writeText(colorToCopy);
+          setCopiedColor(colorToCopy);
+          setTimeout(() => setCopiedColor(null), 2000);
+        };
+        return React.createElement('div', { className: "flex flex-col space-y-4 h-full" },
+          React.createElement('div', { className: "flex items-center space-x-4" },
+            React.createElement('input', { type: "color", value: color, onChange: (e) => setColor(e.target.value), className: "w-12 h-12 bg-transparent border-none cursor-pointer" }),
+            React.createElement('div', { className: "flex-1" }, React.createElement('input', { type: "text", value: color, onChange: (e) => setColor(e.target.value), className: "w-full bg-slate-900/70 border border-slate-100/10 rounded-md px-3 py-2 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500" }))
+          ),
+          React.createElement('button', { onClick: addToPalette, className: "w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300" }, "Add to Palette"),
+          palette.length > 0 && React.createElement('div', { className: "flex-grow" }, React.createElement('div', { className: "grid grid-cols-4 gap-2" }, palette.map((palColor) => React.createElement('div', { key: palColor, onClick: () => handleCopy(palColor), className: "w-full aspect-square rounded-md cursor-pointer transition-transform transform hover:scale-110", style: { backgroundColor: palColor } }, copiedColor === palColor && React.createElement('div', { className: "flex items-center justify-center h-full text-white text-xs" }, "Copied!"))))),
+          palette.length > 0 && React.createElement('button', { onClick: () => setPalette([]), className: "w-full bg-slate-600 hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-300 mt-auto" }, "Clear Palette")
+        );
+      };
+      
+      const toolComponentMap = {
+        MetaTagAnalyzer, JsonToCsv, CssGradientGenerator, WordCounter, CaseConverter, TimestampConverter,
+        PasswordGenerator, TextToSlug, ImageToBase64, PxToRem, UrlEncoderDecoder, ColorPalette
+      };
+
+      // --- components/Background.js ---
+      const Background = () => {
+        return (
+          React.createElement(React.Fragment, null,
+            React.createElement('div', { className: "gradient-bg" }),
+            React.createElement('div', { className: "blob blob1" }),
+            React.createElement('div', { className: "blob blob2" })
+          )
+        );
+      };
+
+      // --- components/AdSenseAd.js ---
+      const AdSenseAd = ({ client, slot, format = 'auto', responsive = true }) => {
+        useEffect(() => {
+          // Delay the push to ensure the container has been rendered and has a width.
+          const timeoutId = setTimeout(() => {
+            try {
+              (window.adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+              console.error("AdSense error:", e);
+            }
+          }, 50); // A small delay for the browser to calculate layout.
+
+          return () => clearTimeout(timeoutId);
+        }, [client, slot, format, responsive]); // Rerun effect if props change.
+
+        return React.createElement('div', { className: 'my-8 text-center', 'aria-hidden': 'true' },
+          React.createElement('ins', {
+            className: "adsbygoogle",
+            style: { display: 'block' },
+            'data-ad-client': client,
+            'data-ad-slot': slot,
+            'data-ad-format': format,
+            'data-full-width-responsive': responsive.toString()
+          })
+        );
+      };
+      
+      // --- components/Hero.js ---
+      const Hero = ({ onCtaClick }) => {
+        return (
+          React.createElement('section', { className: "relative flex flex-col items-center justify-center min-h-screen text-center text-white pt-32 pb-20 px-4" },
+            React.createElement('div', { className: "max-w-4xl mx-auto" },
+              React.createElement('h1', { className: "text-5xl md:text-7xl lg:text-8xl font-poppins font-extrabold tracking-tighter mb-4" },
+                React.createElement('span', { className: "bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400" }, "Toolify Hub")
+              ),
+              React.createElement('p', { className: "text-lg md:text-2xl text-slate-300 max-w-2xl mx-auto mb-8" }, "Smart, free, and beautiful web tools — all in one place."),
+              React.createElement('button', {
+                onClick: onCtaClick,
+                className: "font-semibold text-lg bg-white/10 border border-white/20 text-white px-8 py-3 rounded-lg backdrop-blur-md hover:bg-white/20 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-400 shadow-[0_0_15px_rgba(142,45,226,0.4)] hover:shadow-[0_0_25px_rgba(142,45,226,0.6)]"
+              }, "Try Tools Now")
+            )
+          )
+        );
+      };
+
+      // --- components/ToolCard.js ---
+      const ToolCard = ({ icon, title, description, delay = 0 }) => {
+        const [isVisible, setIsVisible] = useState(false);
+        const cardRef = useRef(null);
+        useEffect(() => {
+          const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+              setIsVisible(true);
+              observer.unobserve(entry.target);
+            }
+          }, { root: null, rootMargin: '0px', threshold: 0.1 });
+          if (cardRef.current) {
+            observer.observe(cardRef.current);
+          }
+          return () => {
+            if (cardRef.current) {
+              observer.unobserve(cardRef.current);
+            }
+          };
+        }, []);
+        return (
+          React.createElement('div', { ref: cardRef, className: `h-full transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`, style: { transitionDelay: `${delay}ms` } },
+            React.createElement('div', { className: "h-full bg-slate-900/40 backdrop-blur-xl border border-slate-100/10 rounded-2xl shadow-lg hover:shadow-purple-500/20 transition-shadow duration-300 flex flex-col p-6" },
+              React.createElement('div', { className: "flex items-center space-x-4" },
+                React.createElement('div', { className: "w-10 h-10 text-purple-400 flex-shrink-0" }, icon),
+                React.createElement('div', null,
+                  React.createElement('h3', { className: "font-bold text-lg text-white" }, title),
+                  React.createElement('p', { className: "text-sm text-slate-400" }, description)
+                )
+              )
+            )
+          )
+        );
+      };
+
+      // --- components/Footer.js ---
+      const Footer = () => {
+        const handleNavigate = (e, hash) => {
+          e.preventDefault();
+          window.location.hash = hash;
+        };
+        return (
+          React.createElement('footer', { className: "text-center py-12 text-slate-400 text-sm" },
+            React.createElement('div', { className: "flex justify-center space-x-6 mb-6" },
+              React.createElement('a', { href: "#/page/about", onClick: e => handleNavigate(e, '#/page/about'), className: "hover:text-white transition-colors" }, "About"),
+              React.createElement('a', { href: "#/blog", onClick: e => handleNavigate(e, '#/blog'), className: "hover:text-white transition-colors" }, "Blog"),
+              React.createElement('a', { href: "#/page/contact", onClick: e => handleNavigate(e, '#/page/contact'), className: "hover:text-white transition-colors" }, "Contact"),
+              React.createElement('a', { href: "#/page/privacy", onClick: e => handleNavigate(e, '#/page/privacy'), className: "hover:text-white transition-colors" }, "Privacy Policy"),
+              React.createElement('a', { href: "#/page/sitemap", onClick: e => handleNavigate(e, '#/page/sitemap'), className: "hover:text-white transition-colors" }, "Sitemap")
+            ),
+            React.createElement('p', { className: "relative inline-block after:content-[''] after:absolute after:w-full after:h-[1px] after:bottom-[-4px] after:left-0 after:bg-gradient-to-r after:from-transparent after:via-purple-400 after:to-transparent" }, "© 2023 Toolify Hub • Built for creators with ❤️ • No tracking.")
+          )
+        );
+      };
+      
+      const logoSrc = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCAyMDAgNTAiPjx0ZXh0IHg9IjEwIiB5PSIzNSIgZm9udC1mYW1pbHk9IlBvcHBpbnMsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZTBlMGZmIj5Ub29saWZ5IEh1YjwvdGV4dD48L3N2Zz4=';
+      
+      // --- components/Header.js ---
+      const Header = () => {
+        const [isMenuOpen, setIsMenuOpen] = useState(false);
+        
+        const handleNavigate = (e, hash) => {
+          e.preventDefault();
+          const currentHash = window.location.hash;
+          // If trying to navigate to home and already at home, scroll to top.
+          if ((hash === '#') && (currentHash === '' || currentHash === '#')) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            window.location.hash = hash;
+          }
+          setIsMenuOpen(false); // Close menu on navigation
+        };
+
+        const navLinks = [
+            { href: "#", label: "Home" },
+            { href: "#/page/about", label: "About" },
+            { href: "#/blog", label: "Blog" },
+            { href: "#/page/contact", label: "Contact" },
+        ];
+
+        return React.createElement(React.Fragment, null,
+          React.createElement('header', { className: "fixed top-0 left-0 right-0 z-50 bg-slate-900/30 backdrop-blur-lg border-b border-slate-100/10" },
+            React.createElement('div', { className: "container mx-auto px-4 sm:px-6 md:px-8" },
+              React.createElement('div', { className: "flex items-center justify-between h-20" },
+                React.createElement('a', { href: "#", onClick: e => handleNavigate(e, '#'), className: "flex items-center" },
+                  React.createElement('img', { src: logoSrc, alt: "Toolify Hub Logo", className: "h-10" })
+                ),
+                React.createElement('nav', { className: "hidden md:flex items-center space-x-8" },
+                  navLinks.map(link => React.createElement('a', { key: link.href, href: link.href, onClick: e => handleNavigate(e, link.href), className: "text-slate-300 hover:text-white transition-colors" }, link.label))
+                ),
+                React.createElement('div', { className: "md:hidden" },
+                  React.createElement('button', { onClick: () => setIsMenuOpen(!isMenuOpen), 'aria-label': 'Open menu' },
+                    React.createElement(MenuIcon)
+                  )
+                )
+              )
+            )
+          ),
+          isMenuOpen && React.createElement('div', { className: "fixed inset-0 z-40 bg-slate-900/80 backdrop-blur-lg md:hidden" },
+            React.createElement('div', { className: "container mx-auto px-4 sm:px-6 md:px-8 pt-24" },
+                React.createElement('button', { onClick: () => setIsMenuOpen(false), className: "absolute top-7 right-4 text-white", 'aria-label': 'Close menu' },
+                  React.createElement(XIcon)
+                ),
+                React.createElement('nav', { className: "flex flex-col items-center space-y-8" },
+                    navLinks.map(link => React.createElement('a', { key: link.href, href: link.href, onClick: e => handleNavigate(e, link.href), className: "text-2xl text-slate-300 hover:text-white transition-colors" }, link.label))
+                )
+            )
+          )
+        );
+      };
+
+      // --- components/ToolsGrid.js ---
+      const ToolsGrid = ({ tools: toolsToShow }) => {
+        const handleNavigate = (e, hash) => {
+          e.preventDefault();
+          window.location.hash = hash;
+        };
+        if (toolsToShow.length === 0) {
+          return React.createElement('div', { className: "text-center py-12 text-slate-400" }, "No tools found matching your search.");
+        }
+        return (
+          React.createElement('section', { id: "tools", className: "py-20 scroll-mt-32" },
+            React.createElement('div', { className: "container mx-auto px-4" },
+              React.createElement('div', { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" },
+                toolsToShow.map((tool, index) => {
+                  const hash = `#/tool/${tool.id}`;
+                  return React.createElement('a', { key: tool.id, href: hash, onClick: (e) => handleNavigate(e, hash), className: "block transition-transform duration-300 hover:scale-105" },
+                    React.createElement(ToolCard, { icon: tool.icon, title: tool.title, description: tool.description, delay: index * 100 })
+                  );
+                })
+              )
+            )
+          )
+        );
+      };
+
+      // --- components/ToolPage.js ---
+      const ToolPage = ({ tool }) => {
+        const ToolComponent = toolComponentMap[tool.component];
+        const handleBack = (e) => {
+          e.preventDefault();
+          window.location.hash = '';
+        };
+        return (
+          React.createElement('div', { className: "min-h-screen flex flex-col items-center justify-center px-4 pt-32 pb-12" },
+            React.createElement('div', { className: "w-full max-w-4xl" },
+              React.createElement('a', { href: "#", onClick: handleBack, className: "inline-flex items-center text-slate-300 hover:text-white mb-8 group" },
+                React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: "w-5 h-5 mr-2 transition-transform group-hover:-translate-x-1" }, React.createElement('line', { x1: "19", y1: "12", x2: "5", y2: "12" }), React.createElement('polyline', { points: "12 19 5 12 12 5" })),
+                "Back to All Tools"
+              ),
+              React.createElement('div', { className: "bg-slate-900/40 backdrop-blur-xl border border-slate-100/10 rounded-2xl shadow-lg shadow-purple-500/10" },
+                React.createElement('div', { className: "p-6 md:p-8 border-b border-slate-100/10" },
+                  React.createElement('div', { className: "flex items-center space-x-4" },
+                    React.createElement('div', { className: "w-12 h-12 text-purple-400" }, tool.icon),
+                    React.createElement('div', null,
+                      React.createElement('h1', { className: "font-bold text-2xl text-white" }, tool.title),
+                      React.createElement('p', { className: "text-md text-slate-400" }, tool.description)
+                    )
+                  )
+                ),
+                React.createElement('div', { className: "p-6 md:p-8" }, React.createElement(ToolComponent)),
+                React.createElement(AdSenseAd, { client: "ca-pub-XXXXXXXXXXXXXXXX", slot: "ZZZZZZZZZZ" }),
+                React.createElement('div', { className: "prose p-6 md:p-8 border-t border-slate-100/10", dangerouslySetInnerHTML: { __html: tool.content }})
+              )
+            )
+          )
+        );
+      };
+
+      // --- components/pages/StaticPage.js ---
+      const StaticPage = ({ page }) => {
+        let pageContent = page.content;
+        
+        if (page.id === 'sitemap') {
+            const handleNavigate = (e, hash) => {
+                e.preventDefault();
+                window.location.hash = hash;
+            };
+
+            const sitemapSections = {
+                'Tools': tools.map(item => ({ href: `#/tool/${item.id}`, title: item.title })),
+                'Pages': pages.filter(p => p.id !== 'sitemap').map(item => ({ href: `#/page/${item.id}`, title: item.title })),
+                'Blog Posts': blogPosts.map(item => ({ href: `#/blog/${item.slug}`, title: item.title })),
+            };
+
+            const sitemapHtml = Object.entries(sitemapSections).map(([title, links]) => {
+                if (links.length === 0) return '';
+                return `
+                    <h3 class="text-2xl font-bold text-purple-400 mt-8 mb-4">${title}</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        ${links.map(link => `<li><a href="${link.href}" class="text-slate-300 hover:text-white hover:underline">${link.title}</a></li>`).join('')}
+                    </ul>
+                `;
+            }).join('');
+            
+            pageContent = sitemapHtml;
+        }
+
+        return (
+          React.createElement('div', { className: "min-h-screen flex items-center justify-center px-4 pt-32 pb-12" },
+            React.createElement('div', { className: "w-full max-w-4xl" },
+              React.createElement('div', { className: "bg-slate-900/40 backdrop-blur-xl border border-slate-100/10 rounded-2xl shadow-lg shadow-purple-500/10 p-8 md:p-12" },
+                React.createElement('h1', { className: "font-poppins text-4xl font-bold text-white mb-6" }, page.title),
+                React.createElement('div', { className: "prose max-w-none", dangerouslySetInnerHTML: { __html: pageContent } })
+              )
+            )
+          )
+        );
+      };
+
+      // --- components/pages/BlogIndexPage.js ---
+      const BlogIndexPage = () => {
+        const handleNavigate = (e, hash) => {
+          e.preventDefault();
+          window.location.hash = hash;
+        };
+        return (
+          React.createElement('div', { className: "min-h-screen flex items-center justify-center px-4 pt-32 pb-12" },
+            React.createElement('div', { className: "w-full max-w-4xl" },
+              React.createElement('h1', { className: "font-poppins text-5xl font-bold text-white mb-10 text-center" }, "Toolify Hub Blog"),
+              React.createElement('div', { className: "space-y-8" },
+                blogPosts.map(post => (
+                  React.createElement('a', {
+                    key: post.slug,
+                    href: `#/blog/${post.slug}`,
+                    onClick: e => handleNavigate(e, `#/blog/${post.slug}`),
+                    className: "block bg-slate-900/40 backdrop-blur-xl border border-slate-100/10 rounded-2xl p-8 hover:border-purple-400/50 transition-colors duration-300"
+                  },
+                    React.createElement('h2', { className: "text-2xl font-bold text-white mb-2" }, post.title),
+                    React.createElement('p', { className: "text-slate-400 text-sm" }, post.date)
+                  )
+                ))
+              )
+            )
+          )
+        );
+      };
+
+      // --- components/pages/BlogPostPage.js ---
+      const BlogPostPage = ({ post }) => {
+        const handleBack = (e) => {
+          e.preventDefault();
+          window.location.hash = '#/blog';
+        };
+        return (
+          React.createElement('div', { className: "min-h-screen flex flex-col items-center justify-center px-4 pt-32 pb-12" },
+            React.createElement('div', { className: "w-full max-w-4xl" },
+              React.createElement('a', { href: "#/blog", onClick: handleBack, className: "inline-flex items-center text-slate-300 hover:text-white mb-8 group" },
+                React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: "w-5 h-5 mr-2 transition-transform group-hover:-translate-x-1" }, React.createElement('line', { x1: "19", y1: "12", x2: "5", y2: "12" }), React.createElement('polyline', { points: "12 19 5 12 12 5" })),
+                "Back to Blog"
+              ),
+              React.createElement('div', { className: "bg-slate-900/40 backdrop-blur-xl border border-slate-100/10 rounded-2xl shadow-lg shadow-purple-500/10 p-8 md:p-12" },
+                React.createElement('h1', { className: "font-poppins text-4xl font-bold text-white mb-2" }, post.title),
+                React.createElement('p', { className: "text-slate-400 text-sm mb-8" }, post.date),
+                React.createElement('div', { className: "prose max-w-none", dangerouslySetInnerHTML: { __html: post.content } }),
+                React.createElement(AdSenseAd, { client: "ca-pub-XXXXXXXXXXXXXXXX", slot: "WWWWWWWWWW" })
+              )
+            )
+          )
+        );
+      };
+
+      // --- App.js ---
+      const App = () => {
+        const [currentView, setCurrentView] = useState({ type: 'home' });
+        const [searchQuery, setSearchQuery] = useState('');
+        
+        const updateMetaAndSchema = (pageData) => {
+          const { title, description, type, url } = pageData;
+          document.title = title;
+          document.querySelector('meta[name="description"]').setAttribute('content', description);
+          
+          const baseUrl = window.location.origin + window.location.pathname.replace(/index.html$/, '');
+          const fullUrl = url ? new URL(url, baseUrl).href : baseUrl;
+          
+          const canonicalLink = document.querySelector('link[rel="canonical"]');
+          if (canonicalLink) {
+            canonicalLink.setAttribute('href', fullUrl);
+          }
+          
+          const setMetaProperty = (property, content) => {
+            const element = document.querySelector(`meta[property='${property}']`);
+            if (element) element.setAttribute('content', content);
+          };
+
+          // Update Open Graph tags
+          setMetaProperty('og:title', title);
+          setMetaProperty('og:description', description);
+          setMetaProperty('og:url', fullUrl);
+          setMetaProperty('og:type', type === 'blogPost' ? 'article' : 'website');
+
+          // Update Twitter Card tags
+          setMetaProperty('twitter:title', title);
+          setMetaProperty('twitter:description', description);
+          setMetaProperty('twitter:url', fullUrl);
+
+          // Update structured data
+          let schema = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": baseUrl,
+            "name": "Toolify Hub",
+            "description": "A futuristic all-in-one toolkit with a collection of smart, free, and beautiful web tools, designed for the next web."
+          };
+
+          if (type === 'blogPost') {
+              schema = {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": title,
+                "author": {
+                  "@type": "Organization",
+                  "name": "Toolify Hub"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Toolify Hub",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": new URL(logoSrc, baseUrl).href
+                    }
+                },
+                "datePublished": new Date().toISOString().split('T')[0], // Placeholder, ideally from post data
+                "description": description
+              };
+          } else if (type !== 'home') {
+              schema = {
+                  "@context": "https://schema.org",
+                  "@type": "WebPage",
+                  "url": fullUrl,
+                  "name": title,
+                  "description": description
+              };
+          }
+          
+          let schemaScript = document.getElementById('json-ld-schema');
+          if (!schemaScript) {
+            schemaScript = document.createElement('script');
+            schemaScript.type = 'application/ld+json';
+            schemaScript.id = 'json-ld-schema';
+            document.head.appendChild(schemaScript);
+          }
+          schemaScript.textContent = JSON.stringify(schema);
+        };
+
+        useEffect(() => {
+          const handleHashChange = () => {
+            const hash = window.location.hash;
+            const toolMatch = hash.match(/^#\/tool\/(.+)/);
+            const pageMatch = hash.match(/^#\/page\/(.+)/);
+            const blogMatch = hash.match(/^#\/blog\/?$/);
+            const blogPostMatch = hash.match(/^#\/blog\/(.+)/);
+
+            if (toolMatch && toolMatch[1]) {
+              const tool = tools.find(t => t.id === toolMatch[1]);
+              if (tool) {
+                 setCurrentView({ type: 'tool', data: tool });
+                 updateMetaAndSchema({ title: `${tool.title} | Toolify Hub`, description: tool.description, type: 'tool', url: `#/tool/${tool.id}` });
+              }
+            } else if (pageMatch && pageMatch[1]) {
+              const page = pages.find(p => p.id === pageMatch[1]);
+              if (page) {
+                setCurrentView({ type: 'page', data: page });
+                updateMetaAndSchema({ title: `${page.title} | Toolify Hub`, description: page.description, type: 'page', url: `#/page/${page.id}` });
+              }
+            } else if (blogMatch) {
+              setCurrentView({ type: 'blogIndex' });
+              updateMetaAndSchema({ title: `Blog | Toolify Hub`, description: 'Read articles and updates from the Toolify Hub team.', type: 'blogIndex', url: '#/blog'});
+            } else if (blogPostMatch && blogPostMatch[1]) {
+              const post = blogPosts.find(p => p.slug === blogPostMatch[1]);
+              if(post) {
+                setCurrentView({ type: 'blogPost', data: post });
+                updateMetaAndSchema({ title: `${post.title} | Toolify Hub`, description: post.description, type: 'blogPost', url: `#/blog/${post.slug}`});
+              }
+            } else {
+              setCurrentView({ type: 'home' });
+              updateMetaAndSchema({ title: 'Toolify Hub - Smart Tools for the Next Web', description: 'A futuristic all-in-one toolkit with a collection of smart, free, and beautiful web tools, designed for the next web.', type: 'home' });
+            }
+            window.scrollTo(0, 0);
+          };
+
+          window.addEventListener('hashchange', handleHashChange, false);
+          handleHashChange(); // Check hash on initial load
+          return () => {
+            window.removeEventListener('hashchange', handleHashChange, false);
+          };
+        }, []);
+
+        const handleScrollToTools = () => {
+          document.getElementById('tools')?.scrollIntoView({ behavior: 'smooth' });
+        };
+        
+        const filteredTools = tools.filter(tool => 
+            tool.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+            tool.description.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+
+        const renderContent = () => {
+          switch (currentView.type) {
+            case 'tool':
+              return React.createElement(ToolPage, { tool: currentView.data });
+            case 'page':
+              return React.createElement(StaticPage, { page: currentView.data });
+            case 'blogIndex':
+              return React.createElement(BlogIndexPage);
+            case 'blogPost':
+              return React.createElement(BlogPostPage, { post: currentView.data });
+            case 'home':
+            default:
+              return React.createElement(React.Fragment, null,
+                React.createElement(Hero, { onCtaClick: handleScrollToTools }),
+                React.createElement('div', { className: 'container mx-auto px-4' },
+                    React.createElement('div', { className: 'relative max-w-2xl mx-auto' },
+                        React.createElement('div', { className: 'absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none' }, React.createElement(SearchIcon, { className: 'text-slate-500' })),
+                        React.createElement('input', { 
+                            type: 'text', 
+                            placeholder: 'Search for a tool (e.g., json, color, password)',
+                            value: searchQuery,
+                            onChange: (e) => setSearchQuery(e.target.value),
+                            className: "w-full bg-slate-900/70 border border-slate-100/10 rounded-lg py-3 pl-12 pr-4 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        })
+                    )
+                ),
+                React.createElement(ToolsGrid, { tools: filteredTools }),
+                React.createElement(AdSenseAd, { client: "ca-pub-XXXXXXXXXXXXXXXX", slot: "YYYYYYYYYY" }),
+                React.createElement(Footer)
+              );
+          }
+        };
+
+        return (
+          React.createElement('div', { className: "relative min-h-screen overflow-hidden" },
+            React.createElement(Background),
+            React.createElement(Header),
+            React.createElement('main', { className: "relative z-10" },
+              renderContent()
+            )
+          )
+        );
+      };
+
+      // --- index.js ---
+      const rootElement = document.getElementById('root');
+      if (!rootElement) {
+        throw new Error("Could not find root element to mount to");
+      }
+      const root = ReactDOM.createRoot(rootElement);
+      root.render(React.createElement(React.StrictMode, null, React.createElement(App)));
+
+    </script>
+  </body>
+</html>
